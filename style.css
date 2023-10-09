@@ -1,0 +1,70 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: clamp(20px, 5vw, 50px);
+    background: whitesmoke;
+}
+.main-header{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: clamp(0.8rem, 5vw, 2.5rem);
+}
+.title{
+    text-align: center;
+    font-weight: 400;
+    padding: clamp(10px, 5vw, 50px);
+}
+.title span{
+    font-weight: 700;
+}
+.logo{
+    width: clamp(100px, 50vw, 250px);
+}
+.form-container{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.search-input{
+    height: clamp(30px, 10vw, 60px);
+    padding: 10px;
+    font-size: clamp(0.8rem, 5vw, 2rem);
+}
+.message{
+    text-align: center;
+}
+.result-area{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+.result{
+    padding: clamp(1px, 10vw, 100px);
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+}
+.result-title{
+    font-size: clamp(0.8rem, 5vw, 2.5rem);
+}
+.result-link{
+    text-decoration: none;
+    color: green;
+    font-size: clamp(0.8rem, 5vw, 2rem);
+}
+.result-link:visited{
+    color: green;
+}
+.result-description{
+    text-align: justify;
+    font-size: clamp(0.8rem, 5vw, 2rem);
+}
